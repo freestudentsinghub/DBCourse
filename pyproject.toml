@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "dbcourse"
+version = "0.1.0"
+description = ""
+authors = ["freestudentsinghub  <masha1207355@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+
+
+[tool.poetry.group.lint.dependencies]
+mypy = "^1.13.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
