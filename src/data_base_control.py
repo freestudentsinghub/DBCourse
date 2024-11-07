@@ -61,7 +61,7 @@ def save_data_to_database_emp(
         for emp in data_emp:
             if "id" not in emp:
                 print(f"В словаре {emp} нет ключа 'id'")
-                continue  # Пропускаем этот словарь и переходим к следующему
+                continue
 
             cur.execute(
                 """ INSERT INTO employers (employer_id, employer_name, employer_area, url, open_vacancies) 

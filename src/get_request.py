@@ -5,7 +5,7 @@ import requests
 employer_ids = [
     99966,
     78638,
-    108398271,
+    780654,
     1864790,
     9498120,
     5331842,
@@ -19,7 +19,6 @@ employer_ids = [
 def get_employee_data():
     """
     функция для получения данных о компаниях с сайта HH.ru
-    :return: список компаний
     """
     employers = []
     for employer_id in employer_ids:
@@ -38,7 +37,6 @@ def get_employee_data():
 def get_vacancies_data():
     """
     функция для получения данных о вакансиях с сайта HH.ru
-    :return: список вакансий
     """
     vacancy = []
     for vacacies_id in employer_ids:
